@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(238,238,238);
+  color: rgb(0,0,0);
+
+  font-family: helvetica century sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+#mainHeader, #mainBody, #mainFooter{
+  width: 85%;
+  margin: auto;
+
+}
+.clearFix{
+  clear: both;
+}
+.headingName{
+  background-color: rgb(0, 114, 176);
+  color: (254,254,154);
+  margin: 0px;
+  height: 15vh;
+  padding: 10px;
+  border-radius: 8px;
+}
+#mainHeader .borderBottom{
+  border-top: 20px solid rgb(238,238,238) ;
+}
+#mainBody{
+  background-color: white;
+  height: 80vh;
+  border-radius: 8px;
+}
+#mainBody .bodyHeading{
+  padding-left:  20px;
+  padding-top: 1px;
+}
+#mainBody .tipOne{
+  background-color: rgb(238,238,238);
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 46%;
+  border-radius: 8px;
+  line-height: 1.2em;
+  float: left;
+  box-sizing: border-box;
+}
+#mainBody .tipOne img{
+  float: left;
+  padding: 20px;
+}
+#mainBody .tipOne h3,.tipTwo h3{
+  padding: 0px;
+  margin-top:  0px;
+}
+
+#mainBody .tipTwo{
+  background-color: rgb(238,238,238);
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 46%;
+  border-radius: 8px;
+  line-height: 1.2em;
+  float: right;
+  box-sizing: border-box;
+}
+#mainBody .tipTwo img{
+  float: left;
+  padding: 20px;
+}
+#mainBody  h3{
+  padding: 0px;
+  margin-top:  0px;
+}
