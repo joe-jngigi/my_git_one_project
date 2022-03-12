@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(222, 225, 228);
+    font-size: 15px;
+    line-height: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+h4{
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+p{
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+span{
+    font-size: 12px;
+}
+a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+#mainWeb{
+    width: 80%;
+    margin: auto;
+}
+
+/* Header of the page*/
+#mainHeader{ 
+    background-color:rgb(255,255,255) ;
+    box-shadow: 0 14px 40px rgb(238, 233, 233), 0 10px 10px rgb(22, 21, 21);
+    
+}
+#mainHeader .homeContainer{
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    
+}
+#mainHeader .homeContainer img{
+    margin-top: 10px;
+    float: left;
+}
+#mainHeader .homeContainer ul{
+    padding: 5px 30px;
+    display: inline-flex;
+    float: right;
+    margin-top: 20px;
+    border: 2px black solid;
+    border-radius: 50px;
+
+}
+#mainHeader .homeContainer li{
+    margin-left: 0px;
+    
+    list-style: none;
+}
+#mainHeader .homeContainer li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+/*Account information*/
+.dashBoard{
+    margin-top: 50px;
+}
+.accBal{
+    display: flex;
+    padding-bottom: 40px;   
+}
+.accountBalance{
+    border-radius: 10px;
+    border-right: 10px solid rgb(61, 130, 196);
+    width: 40%;
+    padding: 10px;
+    margin-right:5px ;
+    background-color: rgb(255, 255,255);
+}
+.accountBalance .accIcons{
+    margin: 20px 10px;
+    float: left;
+    border: 1px solid rgb(61, 130, 196);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.accountBalance .accIcons i{  
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 30px;  
+}
+.accountBalance .info{
+    float: right;
+    line-height: 1.2em;
+}
+.accountBalance .info p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: right;
+
+}
+.accountBalance .info h3{
+    font-size: 20px;
+    text-align: right;
+}
+/*Transactions*/
+.cashTransactions{
+    background-color: rosybrown;
+    height: 100%;
+    padding: 10px;
+}
+.cashContainer{
+    background-color: rgb(255, 255,255);
+    width: 48%;
+    height :400px;
+    float: left;
+    margin: 10px;
+}

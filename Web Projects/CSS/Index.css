@@ -1,0 +1,454 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(222, 225, 228);
+    font-size: 17px;
+    line-height: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+}
+.contentContainer{
+    width: 80%;
+    margin: auto;
+}
+#mainHead{
+    background-color: thistle;
+}
+#mainHead .container{
+    overflow-y: hidden;
+    background-color: rgb(255, 255,255);
+    height: 100px;
+    box-sizing: border-box;
+}
+#mainHead .Logo{  
+    margin-top: 10px;
+}
+#mainHead .Logo img{
+    margin-top: 10px;
+     
+}
+#mainHead .accInfo{
+    float: right;
+
+}
+
+/* Linking account CSS*/
+#mainHead .accInfo img{
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center
+
+
+}
+#mainHead .accInfo{
+    display: inline-flex;
+}
+#mainHead .accInfo li{
+    display: inline-flex;
+    list-style: none;
+    
+}
+#mainHead .accInfo li a{
+    padding-right: 10px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:540;
+    font-weight: bolder;
+    transition: transform 80ms ease-in;
+}
+#mainHead .accInfo li a:active{
+    transform: scale(0.95);
+}
+
+#mainHead .accInfo label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:540;
+    font-weight: bolder;
+    color: rgb(1, 1, 63);
+
+}
+#mainHead .accInfo li a:hover{
+    text-decoration: underline;
+}
+#mainHead .accInfo li a:focus{
+    color: rgb(1, 1, 63);
+
+}
+
+
+/* Navigation CSS code*/
+#mainHead .mainNavigation{
+    overflow: hidden;
+    background-color: rgb(61, 130, 196);
+    height: 100px;
+    padding: 0px;  
+    box-shadow: 0 14px 40px rgb(238, 233, 233), 0 10px 10px rgb(22, 21, 21);
+   
+}
+#mainHead .mainNavigation ul{
+    padding-left: 0px;
+    text-align: left;
+    margin-top: 15px;
+    height: 70px;
+    
+}
+#mainHead .mainNavigation li{
+
+   list-style: none;
+   display: inline-flex;
+   padding-top: 20px;
+   padding-right: 35px;
+
+
+}
+#mainHead .mainNavigation a{
+    text-decoration: none;
+    padding: 0px;
+    color:black;
+    font-family:  Arial, Helvetica, sans-serif,Helvetica, sans-serif;
+    font-weight: bolder;
+    
+}
+
+#mainHead .mainNavigation a:hover{
+    border-bottom: 2px solid whitesmoke ;
+    color: whitesmoke;
+    text-decoration: whitesmoke;
+}
+
+#mainHead .mainNavigation .askSign{ 
+    
+    padding-right: 0px;
+
+}
+#mainHead .mainNavigation .askSign{
+    float: right;   
+    
+}
+#mainHead .mainNavigation .askSign a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+/*Main body CSS
+.Maincontainer{
+    height: 80vh;
+    margin-top: 50px;
+    background-color: aqua;
+    padding: 20px 50px;
+}
+*/
+#mainBody{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+.Maincontainer{
+   
+    height: 100vh;
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 0px 0px;
+}
+
+/* Design for the dashboard*/
+#selfServices{
+    overflow: hidden;
+    background-color: rgb(61, 130, 196);
+    flex-direction: row;
+    height: 100%;
+    
+}
+#dashboard{
+    overflow: hidden;
+    background-color: transparent;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0px;  
+}
+.accBal{
+    display: flex;
+    padding-bottom: 40px;
+    
+    
+}
+.accountBalance{
+    border-radius: 10px;
+    border-right: 10px solid rgb(61, 130, 196);
+    width: 40%;
+    padding: 10px;
+    margin-right:5px ;
+    background-color: rgb(255, 255,255);
+}
+.accountBalance .accIcons{
+    margin: 20px 10px;
+    float: left;
+    border: 1px solid rgb(61, 130, 196);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.accountBalance .accIcons i{  
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 30px;  
+}
+.accountBalance .info{
+    float: right;
+    line-height: 1.2em;
+}
+.accountBalance .info p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: right;
+
+}
+.accountBalance .info h3{
+    font-size: 20px;
+    text-align: right;
+}
+
+/*Design for the current infromation*/
+.userInfo{
+    background-color: transparent;
+    display: flex;
+    box-sizing: border-box;
+}
+.userCurrent{
+    background-color: rgb(255, 255,255);
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    margin-right: 5px;
+    padding: 10px;
+}
+/*Table content*/
+table{
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+tr{ 
+    height: 62px;
+}
+td{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:0px ;
+    
+}
+.leftH{
+    border-bottom: 2px solid black;
+    columns: 2;
+}
+.rightH{
+    border-bottom: 2px solid black;
+    columns: 2;
+}
+.Amoney{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.money{
+    text-align: center;
+    margin: 0%;
+}
+.userCurrent h4{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(61, 130, 196);
+}
+.tabLayout{
+    
+    position: absolute;
+    transform: translateX(100%);
+ }
+ #D-btn{
+    border-bottom: 2px solid black ;
+    padding-bottom: 3px; 
+}
+#dashboard{
+    transform: translate(0px);
+}
+#selfServices{
+    transform: translate(100%);
+}
+
+/*design for for profile*/
+
+#profile{
+    overflow: hidden;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0px;  
+}
+.profileCard{
+    display: flex;
+    overflow: hidden;
+    background-color: transparent;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.viewCard{
+    height: 70%;
+    width: 23%;
+    background-color: white;
+    border-radius: 10px;
+}
+#profile img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+#profile .profileName ul {
+    background-color: rgb(61, 130, 196);
+    height: 80px;
+    padding-top: 20px;
+}
+.profileName ul li{
+    
+    text-indent: 0%;
+    font-size: 15px;
+    font-family: Geneva, Tahoma, sans-serif;
+    line-height: 1.4em;
+}
+.otherInfo{
+    background-color:transparent;
+    width: 77%;
+    height: 80%;
+    border-radius:10px ;
+    display: flex;
+    flex-flow: column;
+}
+.rowOne{
+    height: 100%;
+    width: 100%;
+
+}
+.rowTwo{
+    height: 100%;
+    width: 100%;
+}
+.contactInfo{
+    overflow: hidden;
+    background-color: rgb(255, 255,255);
+    border-radius: 10px;
+    height: 50%;
+    width: 40%;
+    padding-left: 0px;
+    justify-content: left;
+    align-items: left;
+}
+.contactInfo span{
+    float: right;
+    margin-left: 0px;
+    width: 70%;
+}
+
+.otherInfo li{
+    margin: 20px;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px rgb(61, 130, 196) solid; 
+    font-size: 13px;
+}
+.otherInfo h4{
+    text-align: center;
+}
+
+.contactInfo{
+    float: left;
+    overflow: hidden;
+    margin: 0px 23px;
+    background-color: rgb(255, 255,255);
+    border-radius: 10px;
+    height: 40%;
+    width: 45%;
+    padding-left: 0px;
+    justify-content: left;
+    align-items: left;
+}
+#downRow{
+    margin-top: 50px;
+}
+#nbtn{
+    color: red;
+}
+
+
+/*Profile container*/
+
+
+/*footer content*/
+#mainFooter{
+    background-color: rgb(255, 255,255);
+    
+
+}
+#mainFooter .textDescription{
+    margin: 0px auto;
+    padding: 0px 3rem;
+}
+#mainFooter .footerColumns{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0rem;
+    text-align: left;
+    font-size: 15px;
+}
+#mainFooter .footerColumns ul li{
+    list-style: none;
+    
+} 
+#mainFooter .footerColumns ul li:first-child{
+    border-bottom: 1px rgb(177, 177, 177) solid;
+    padding-bottom: 0.5rem;
+    
+}
+#mainFooter .footerColumns ul li a{
+    padding: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(61, 130, 196);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#mainFooter .footerBottom{
+    background-color: rgb(255, 255,255);
+    font-size: 14px;
+    padding: 0px 0rem;
+    text-align: center;
+
+}
+
+/* background-color: black;
+
+ 
+#D-btn{
+    border-bottom: 2px solid black ;
+    padding-bottom: 3px; 
+}
+*/

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/d15e46b634.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Services.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="homeContainer">
+            <img height="60px" src="Resources/Logo.jpg" alt="Logo">
+            <ul>
+                <li class = "paul"><a href="Index.html">Home</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="mainWeb">
+        <div class="mainBody">
+            <div class="dashBoard">
+                <h2>Dashboard</h2>
+                <div class="accBal">
+                    <div class="accountBalance">
+                        <div class="accIcons">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="info">
+                            <p>Account balance</p>
+                            <h3>100.00usd</h3>
+                        </div>
+                    </div>
+                    <div class="accountBalance">
+                        <div class="accIcons">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="info">
+                            <p>Withdrawals</p>
+                            <h3>0.00usd</h3>
+                        </div>
+                    </div>
+                    <div class="accountBalance">
+                        <div class="accIcons">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="info">
+                            <p>Savings</p>
+                            <h3>0.00usd</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cashTransactions">
+                <div class="cashContainer">
+                    <h4>Transfer cash</h4>
+                    <div class="transfers">
+                        <h3>Transfer to other accounts</h3>
+
+                        <label for="Account">Enter the account number</label>
+                        <input type="number" placeholder="Account Number">
+
+                        <label for="Amount">Enter amount</label>
+                        <input type="number" placeholder="Amount">
+                        <button>Transfer cash</button>
+                    </div>
+                    <div class="sendmoney">
+                        <form action="">
+                        <h3>Send to carrier</h3>
+                        <label for="radio">Safaricom</label>
+                        <input type="radio">
+                        <input type="tel" id = "saf" value = "saf" name = "Safaricom" placeholder="+254...">
+
+                        <label for="radio">Airtel</label>
+                        <input type="radio">
+                        <input type="tel" id = "air" value = "air" name = "Airtel" placeholder="+254...">
+
+                        <label for="radio">Telkom</label>
+                        <input type="radio">
+                        <input type="tel" id = "tel" value = "tel" name = "Telkom" placeholder="+254...">
+                        <button>Send money</button>
+                        </form>
+                    </div>
+                </div> 
+                <div class="cashContainer">
+                    <h4>Bills & payments</h4>
+                    <h3>Buy airtime</h3>
+                    <div class="buyAirtime">
+                        <label for="Account">Enter the phone number</label>
+                        <input type="number" placeholder="Account Number">
+
+                        <label for="radio">Safaricom</label>
+                        <input type="radio" id = "saf" value = "saf" name = "Safaricom" placeholder="+254...">
+
+                        <label for="radio">Airtel</label>
+                        <input type="radio" id = "air" value = "air" name = "Airtel" placeholder="+254...">
+
+                        <label for="radio">Telkom</label>
+                        <input type="radio" id = "tel" value = "tel" name = "Telkom" placeholder="+254..."> 
+
+                        <label for="Amount">Enter amount</label>
+                        <input type="number" placeholder="Amount">
+                        <button>Buy Airtime</button>
+                    </div>
+                    <div class="paybill">
+                        <h3>Buy airtime</h3>
+                        <label for="Paybill">Enter paybill number</label>
+                        <input type="number" placeholder="Paybill number">
+
+                        <label for="account">Enter the account</label>
+                        <input type="text" placeholder="KimStoreE606">
+
+                        <label for="ammount">Enter Ammount</label>
+                        <input type="number" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="cashContainer">
+                    <h4>Withdraw cash</h4>
+                    <h3>Withdrawals</h3>
+                        <label for="Account">Enter the account number</label>
+                        <input type="number" placeholder="Account Number">
+
+                        <label for="Amount">Enter amount</label>
+                        <input type="number" placeholder="Amount">
+                        <button>Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

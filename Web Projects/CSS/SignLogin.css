@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f5f7;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: -20px 0 50px;
+}
+h1{
+    font-weight: bold;
+    margin: 0px;
+}
+p{
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+    margin: 20px 0px 30px;
+}
+span{
+    font-size: 12px;
+}
+a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0px;
+}
+
+/* Header of the page*/
+#mainHeader{ 
+    background-color:rgb(255,255,255) ;
+    box-shadow: 0 14px 40px rgb(238, 233, 233), 0 10px 10px rgb(22, 21, 21);
+    
+}
+#mainHeader .homeContainer{
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    
+}
+#mainHeader .homeContainer img{
+    margin-top: 10px;
+    float: left;
+}
+#mainHeader .homeContainer ul{
+    padding: 5px 30px;
+    display: inline-flex;
+    float: right;
+    margin-top: 20px;
+    border: 2px black solid;
+    border-radius: 50px;
+
+}
+#mainHeader .homeContainer li{
+    margin-left: 0px;
+    
+    list-style: none;
+}
+#mainHeader .homeContainer li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Body of the page
+
+border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+
+*/
+.signPad{
+    background-color: rgb(255,255,255);
+    
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(0, 0, 0), 0 10px 10px rgb(22, 21, 21);
+    position: relative;
+    overflow: hidden;
+
+    width: 75%;
+    max-width: 100%;
+    min-height: 550px;   
+}
+.formContainer form{
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.socialContainer{
+    margin: 20px 0px;
+}
+.socialContainer a{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+    
+}
+.formContainer input{
+    background-color: rgb(228, 222, 222);
+    border-radius: 20px;
+    color: darkblue;
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0px;
+    width: 100%;
+}
+button{
+    border-radius: 20px;
+    border: 1px solid rgb(61, 130, 196) ;
+    background-color: rgb(61, 130, 196);
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 12px 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+button:active{
+    transform: scale(0.95);
+}
+button:focus{
+    outline: none;
+}
+button.ghost{
+    background-color: transparent;
+    border-color: rgb(255,255,255);
+    color: rgb(255,255,255);
+}
+.formContainer{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.formSignin{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.formSignup{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+#overlayContainer{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.overLay{
+    background-color: rgb(61, 130, 196) ;
+    background: linear-gradient(to right,rgb(4, 177, 230), rgb(61, 130, 196));
+    
+    position: relative;
+    
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.overPanel{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.overLayRight{
+    right: 0;
+    transform: translateX(0);
+}
+.overLayLeft{
+    transform: translateX(-20%);
+}
+
+/*animation*/
+/*move signin to right*/
+.signPad.right-panel-active .formSignin{
+    transform: translateX(100%);
+}
+/*move overlay to left*/
+.signPad.right-panel-active #overlayContainer{
+    transform: translateX(-100%);
+}
+/*bring signup over signin*/
+.signPad.right-panel-active .formSignup{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+/*move overlay back tothe right*/
+.signPad.right-panel-active .overLay{
+    transform: translateX(50%);
+}
+.signPad.right-panel-active .overLayLeft{
+    transform: translateX(0);
+}
+.signPad.right-panel-active .overLayRight{
+    transform: translateX(20%);
+}
+.signInfo{
+    padding: 3px;
+    text-align: center;
+    width: 50%;
+    
+}
+.signInfo a{
+    color: rgb(4, 177, 230);
+}
+
+.newsocialContainer{
+    justify-content: center;
+    align-items: center;
+}
+.newsocialContainer a{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    margin-right:70px ;
+    height: 60px;
+    width: 60px;  
+}
+.newsocialContainer h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: royalblue;
+}
